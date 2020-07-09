@@ -22,7 +22,6 @@ params = np.array([alpha, beta, delta, n, g, sigma])
 
 # Calculate steady state.
 kss_sharp, css_sharp = cal_steady_state(params)
-kss_sharp, css_sharp
 
 # Get simulation result.
 c_sharp_dev, k_sharp_dev, C_level, K_level, Y_level = simulate_model(
