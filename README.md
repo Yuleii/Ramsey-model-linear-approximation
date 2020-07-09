@@ -13,7 +13,7 @@ such that <img src="https://render.githubusercontent.com/render/math?math=E_0=1"
 with    
 <img src="https://render.githubusercontent.com/render/math?math=U(C_{t%2Bs})=log(C_{t%2Bs})">     
 
-It is as an special case of the CRRA utility function, where <img src="https://render.githubusercontent.com/render/math?math=\sigma \rightarrow 0">.     
+It is an special case of the CRRA utility function, where <img src="https://render.githubusercontent.com/render/math?math=\sigma \rightarrow 0">.     
 Hence:   
 <img src="https://render.githubusercontent.com/render/math?math=\tilde{\beta}=\beta((1%2Bg)(1%2Bn))^{1-\sigma}=\beta">  
 
