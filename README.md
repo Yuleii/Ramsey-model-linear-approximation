@@ -1,4 +1,4 @@
-## Ramsey model with exogenous growth.
+## Ramsey model with exogenous growth
 
 ### Cobb-Douglas production function
 

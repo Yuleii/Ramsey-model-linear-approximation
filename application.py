@@ -32,7 +32,7 @@ c_sharp_dev, k_sharp_dev, C_level, K_level, Y_level = simulate_model(
 K_Y_ratio = K_level/Y_level
 
 ################################## Plot ########################################
-# plot time series
+############ plot time series
 
 # Consumption levels, capital levels, and output levels against time.
 time = np.array(list(range(T)))
@@ -51,14 +51,12 @@ plt.xlabel('time')
 fig.savefig('figures/time_series_plot')
 plt.close()
 
-# Visualize linearization
+############ Visualize linearization
 # Create a dictionary that maps readable name onto variable names interested.
 dict = {'capital deviation': k_sharp_dev, 'consumption deviation': c_sharp_dev,
         'Consumption level': C_level, 'Capital level': K_level, 'Output level': Y_level}
 
 # Define a plot function
-
-
 def linearize_plot(x_dict_key, y_dict_key, dict):
     '''
     This function takes two keys from one dictionary and the dictionary per se
