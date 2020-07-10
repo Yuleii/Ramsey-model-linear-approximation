@@ -35,6 +35,7 @@ K_Y_ratio = K_level / Y_level
 # plot time series.
 # Consumption levels, capital levels, and output levels against time.
 time = np.array(list(range(T)))
+
 sns.set_style("white")
 fig, (ax1, ax2) = plt.subplots(2, sharex=True, figsize=(8, 6))
 
