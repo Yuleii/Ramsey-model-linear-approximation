@@ -15,7 +15,7 @@ g = 0.02
 sigma = 1.0
 
 # Set the number of time periods to simulate.
-T = 50
+T = 100
 
 # Make parameter list to pass to functions.
 params = np.array([alpha, beta, delta, n, g, sigma])

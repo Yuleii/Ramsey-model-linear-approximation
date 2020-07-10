@@ -121,7 +121,7 @@ def simulate_model(kss_sharp, css_sharp, params, T):
         x_sharp_dev[0, t] = (V[0, stab_col_ind] / V[1, stab_col_ind]) * x_sharp_dev[1, t]
 
     # Obtain levels (normalized).
-    x_sharp_level = x_sharp_dev + np.array([[css_sharp, kss_sharp], ] * 50).transpose()
+    x_sharp_level = x_sharp_dev + np.array([[css_sharp, kss_sharp], ] * T).transpose()
 
     # Obtain levels.
     X_level = x_sharp_level * ((1 + n) * (1 + g)) ** np.array(list(range(T)))
