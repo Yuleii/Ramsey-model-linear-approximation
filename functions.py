@@ -104,7 +104,7 @@ def simulate_model(kss_sharp, css_sharp, params, T):
     D, V = np.linalg.eig(matrix_A)
 
     # Find out at which position the stable eigenvalue appears
-    stab_col_ind = int(np.where(D < 1)[0])
+    stab_col_ind = int(np.where(np.absolute(D) < 1)[0])
 
     # Initialize vectors to store variables in deviations.
     x_sharp_dev = np.zeros((2, T))
@@ -116,7 +116,7 @@ def simulate_model(kss_sharp, css_sharp, params, T):
     x_sharp_dev[0, 0] = (V[0, stab_col_ind] / V[1, stab_col_ind]) * x_sharp_dev[1, 0]
 
     # Simulate.
-    for t in range(1, T - 1):
+    for t in range(1, T):
         x_sharp_dev[1, t] = np.dot(matrix_A[1, :], x_sharp_dev[:, t - 1])
         x_sharp_dev[0, t] = (V[0, stab_col_ind] / V[1, stab_col_ind]) * x_sharp_dev[1, t]
 
