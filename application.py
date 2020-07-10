@@ -36,7 +36,6 @@ K_Y_ratio = K_level / Y_level
 # Consumption levels, capital levels, and output levels against time.
 time = np.array(list(range(T)))
 sns.set_style("white")
-# sns.set_palette("deep")
 fig, (ax1, ax2) = plt.subplots(2, sharex=True, figsize=(8, 6))
 
 ax1.plot(time, C_level, label="consumption level", color="C0")
@@ -47,7 +46,7 @@ ax1.legend(loc="upper left")
 ax2.plot(time, K_Y_ratio, color="C4", label="capital output ratio")
 ax2.legend(loc="lower right")
 
-plt.xlabel("time")
+plt.xlabel("time", fontsize=15)
 fig.savefig("figures/time_series_plot")
 plt.close()
 
