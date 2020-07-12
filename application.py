@@ -73,8 +73,8 @@ def linearize_plot(x_dict_key, y_dict_key, dict):
     dict: dict
         A dictionary maps readable name onto variable.
     """
-    fig, ax = plt.subplots(figsize=(8, 5))
     sns.set_style("darkgrid")
+    fig, ax = plt.subplots(figsize=(8, 5))
     sns.scatterplot(x=dict[x_dict_key], y=dict[y_dict_key], ax=ax,
                     alpha=0.7, color="steelblue", s=90, marker="+")
     plt.xlabel(x_dict_key, fontsize=15)
