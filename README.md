@@ -1,5 +1,7 @@
 ## Ramsey Model with Exogenous Growth
 
+This is a translation and modification based on the Octave code provided by [Prof. Thomas Hintermaier](https://www.bgse.uni-bonn.de/en/people/faculty-directory/thomas-hintermaier).
+
 ### Cobb-Douglas production function
 
 <img src="https://render.githubusercontent.com/render/math?math=Y_t = F(K_t,H_tN_t)=K_t^\alpha (E_t N_t )^{1-\alpha}">
